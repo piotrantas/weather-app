@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> weather </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-xs-6 col-lg-6 col-xs-offset-3 col-md-offset-3 col-lg-offset-3 search-box">
+          <p class="find">Find your city</p>
+          <input placeholder="type name" id="looking-name" type="text">
+          <button type="submit" class="btn btn-info btn-xs" id="search">Go</button> 
+        </div>
+      </div> 
+    </div>
+    <div class="container curr-weather-box">
+      <div class="row">
+        <div class="col-md-4 col-xs-12 col-lg-8 name-box">
+          <h2>Current weather in </h2><h1 id="city"> - </h1>
+        </div>
+        <div class="col-md-4 col-xs-6 col-lg-2">
+          <div class="icon-box">
+          	<img id="current-day-icon">
+          </div>
+          <p id="current-day-weather">????</p>
+        </div>
+        <div class="col-md-4 col-xs-6 col-lg-2">
+          <p id="current-day-temperature">- *C</p>
+          <p>during the day</p>
+        </div>
+      </div>
+      <div class="row details-box">
+        <div class="col-md-4 col-xs-12 col-lg-4">
+          <ul>
+            <li id="current-day-humidity">humidity</li>
+            <li id="current-day-pressure">pressure</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xs-12 col-lg-4">
+          <ul>
+            <li id="current-day-wind-direction">wind direction</li>
+            <li id="current-day-wind-speed">wind speed</li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-xs-12 col-lg-4">
+          <ul>
+            <li id="current-day-rain">Rain volume</li>
+            <li id="current-day-snow">Snow volume</li>
+          </ul>
+        </div>
+      </div>
+      </div>
+      <div class="container next-day-box">
+        <div class="row">
+        	<div class="col-md-12 col-xs-12 col-lg-12">
+        		<h3>Weather in the few next days</h3>
+        	</div>
+        </div>
+        <div class="row days-row">
+          <div class="col-md-2 col-xs-6 col-lg-2">
+            <p id="day-one">-</p>
+            <div class="icon-box">
+            	<img id="day-one-icon">
+            </div>
+            <p id="day-one-temperature">- *C</p>
+          </div>
+          <div class="col-md-2 col-xs-6 col-lg-2">
+            <p id="day-two">-</p>
+            <div class="icon-box">
+            	<img id="day-two-icon">
+            </div>
+            <p id="day-two-temperature">- *C</p>
+          </div>
+          <div class="col-md-2 col-xs-6 col-lg-2">
+            <p id="day-tree">-</p>
+            <div class="icon-box">
+            	<img id="day-tree-icon">
+            </div>
+            <p id="day-tree-temperature">- *C</p>
+          </div>
+          <div class="col-md-2 col-xs-6 col-lg-2">
+            <p id="day-four">-</p>
+            <div class="icon-box">
+            	<img id="day-four-icon">
+            </div>
+            <p id="day-four-temperature">- *C</p>
+          </div>
+          <div class="col-md-2 col-xs-6 col-lg-2">
+            <p id="day-five">-</p>
+            <div class="icon-box">
+            	<img id="day-five-icon">
+            </div>
+            <p id="day-five-temperature">- *C</p>
+          </div>
+          <div class="col-md-2 col-xs-6 col-lg-2">
+            <p id="day-six">-</p>
+            <div class="icon-box">
+            	<img id="day-six-icon">
+            </div>
+            <p id="day-six-temperature">- *C</p>
+          </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>

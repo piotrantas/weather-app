@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+* {
+	box-sizing: border-box;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+}
+.container {
+	margin: 5vh auto;
+}
+body {
+	background-color: #517191;
+}
+div {
+	text-align: center;
+	border-radius: 5px;	
+}
+.curr-weather-box {
+	border:1px solid;
+	padding: 10px 0;
+}
+h1, h2 {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+p.find {
+	display: inline-block;
+}
+input {
+	color: black;
+}
+.details-box {
+	margin: 5px 0;
+}
+.icon-box {
+	height: 50px;
+	width: 50px;
+	display: inline-block;
+}
+#current-day-temperature {
+	font-size: 27px;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.days-row {
+	margin-top: 5px;
+	border: 1px solid;
+	padding: 10px 0;
+}
